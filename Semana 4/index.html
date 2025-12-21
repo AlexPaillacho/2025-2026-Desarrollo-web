@@ -1,136 +1,162 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewpot" content="width=device-width, initial-scale=1.0">
-     <title>SEMANA 3/ TAREA </title>
-     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
-   <H1>Alimentación Saludable </H1> 
-   <H2>Mejora tus habitos alimenticios </H2>
-   <H3>En esta pagina tenenemos las mejores recetas, recomendaciones, y tips para llevar una vida sana y saludable.</H3>
-   <P>En esta pagina podemos compartir y revisar informacion sobre salud y bienestar de toda la comunidad <strong>Ecuatoriana.</strong> </P>
-   <p> <em>Pueden compartit sus ideas y recomendaciones.</em></p>
-   
 
-   
-   <nav>
-      <a href="http://">recetas</a> |
-      <a href="http://">tips</a> |
-      <a href="http://">comentarios</a>
-   </nav>
-
-
-   <main>
-      <section>
-         <h2>Seccion 1</h2>
-         <p>Habitos alimenticios y recomendaciones.</p>
-      </section>
-      <section>
-         <h2>Seccion 2</h2>
-         <p>Recetas y alimentos que benefician nuestro cuerpo y aceleran el metabolismo.</p>
-      </section>
-      
-   </main>
-
-
-   <div>
-
-     <img width="250px" src="imagen/images (3).jpg" alt="">
-   </div>
-
-   <div>
-      <iframe width="500" height="200" src="https://www.youtube.com/embed/z9ov3C7XM3o?si=DOJ0Aet9qijCaHyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   </div>
-
-
-
-
-   <article>
-      <h2> SALUD Y VIDA</h2>
-      <p>La informacion encontrada
-         en esta pagina web es en base a informacion cientifica 
-         puede visitar el link para mayor informacion
-         <strong>Enlace externo</strong>.
-      </p>
-   </article>
-
-   
-   <a href="https://www.frontiersin.org/whats-new/nutrition/home?utm_source=google&utm_medium=paidsearch&utm_content&utm_campaign=rtsub_rtopgp_11-25_fnut_en_nat_fois-reg13&gad_source=1&gad_campaignid=23080870052&gbraid=0AAAAAC_sJ7l5fwv3A28_LobqQy_Qkbjzz&gclid=CjwKCAiAl-_JBhBjEiwAn3rN7cGJ4OQBeLQATm1DuyjUdCFip3AQTAYadQQnEC90_VyjXR6bzx0OcRoCHskQAvD_BwE"
-   target="_blank">Nutricion es vida</a>
-
-   <H3>LISTAS</H3>
-   <ol>
-      <li>proteinas</li>
-      <li>carbohidratos</li>
-      <li>azucar</li>
-   </ol>
-   
-   <ul>
-     <li>liquidos</li>
-     <li>sal</li>
-     <li>fibra</li>
-   </ul>
-
-
-   <table border="9">
-
-        
-       <thead>TABLA DE TIPS </thead>
-      
-
-      <tr>
-         <th>tips 1</th>
-         <th>tips 2</th>
-         <th>tips 3</th>
-
-      </tr>
-
-      <tr>
-         <td>La proteina se debe consumir a diario</td>
-         <td>El azucar se debe evitar lo mas posible</td>
-         <td>Tomar un litro de agua al dia</td>
-      </tr>
-
-      <tr>
-         <td>Menor consumo de carbohidrato es mejor </td>
-         <td>Las frutas y vegetales deben consumirse adiario</td>
-         <td>Evitar consumir carbohidratos en la noche</td>
-      </tr>
-   </table>
-
-
-   <h1>Formulario de datos</h1>
-
-   
-    <form action="#" method="POST">
-
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> ¿Necesitas una pagina web para tu negocio? Revisa aqui ⬇️ </a>
+            
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menuPrincipal" 
+                    aria-controls="menuPrincipal" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <br>
+    <header class="container header-content text-center">
+        <h1 class="display-4 text-dark">Las mejores paginas web profesionales a tu alcance. </h1>
+        <p class="lead">Descubre las últimas tendencias y haz crecer tu negocio.</p>
+    </header>
 
-        <div>
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+    <main id="productos" class="container mt-5">
+        <h2 class="text-center mb-4">Nuestro Portafolio</h2>
+        
+        <div class="row">
+            
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg card-estandar">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title">Web Estandar</h3>
+                        <p class="card-text">Diseño perzonalizado para tu empresa si estas empezando este plan es para ti.</p>
+                        <a href="#" class="btn btn-dark">Ver Colección</a>
+                    </div>
+                    <img src="imgagen/Captura de pantalla (13067).png" class="card-img-top img-fluid" alt="Colección de Ropa para Hombre">
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title">Web Premium</h3>
+                        <p class="card-text">Diseño unico y una amplia variedad de secciones en tu pagina ideal para competir en el mercado.</p>
+                        <a href="#" class="btn btn-dark">Ver Colección</a>
+                    </div>
+                    <img src="imgagen/Captura de pantalla (13068).png" class="card-img-top img-fluid" alt="Colección de Ropa para Mujer">
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title">Web Coorporativa</h3>
+                        <p class="card-text">Diseño especialmente para tu empresa nacional y multinacional diseño especializado y totalmente coorporativo.</p>
+                        <a href="#" class="btn btn-dark">Ver Colección</a>
+                    </div>
+
+                    <img src="imgagen/Captura de pantalla (13069).png" class="card-img-top img-fluid" alt="Accesorios y Complementos">
+                </div>
+            </div>
+            
         </div>
         
-        <br>
+    </main>
 
-        <div>
-            <button type="submit">Enviar</button>
+    <section id="formulario" class="container mt-5 mb-5">
+        <h2 class="text-center mb-4">¡Contáctanos!</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="comentarios" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="comentarios" rows="3" required></textarea>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-secondary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#infoAdicional" aria-expanded="false" aria-controls="infoAdicional">
+                        Ver Políticas de Privacidad
+                    </button>
+
+                    </div>
+                
+                    <div class="collapse" id="infoAdicional">
+                        <div class="card card-body bg-light">
+                            <small>Tus datos están seguros. Solo serán utilizados para responder a tu consulta. Puedes darte de baja en cualquier momento.</small>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar Mensaje</button>
+                    
+                </form>
+            </div>
         </div>
-
-    </form>
-
+    </section>
+                    
+    
 </body>
 
-<footer>
-<p>&copy;Derechos reservados del autor de la pagina web</p>
-</footer>
+<footer class="footer mt-auto py-3 bg-light border-top">
+        <div class="container text-center">
+            <span class="text-muted">© 2025 Diseño Web DARI. Todos los derechos reservados.</span>
+            <div class="mt-2 footer-links">
+                <a href="#">Privacidad</a> | 
+                <a href="#">Términos</a> | 
+                <a href="#">Síguenos en TikTok</a>
+            </div>
+        </div>
+    </footer>
 </html>
+
+
+
+    
+    
+          
+                    
