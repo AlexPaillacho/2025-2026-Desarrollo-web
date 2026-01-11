@@ -1,51 +1,42 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galeria de Imagenes Interactiva</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-
-    <h1> Galeria de Imagenes </h1>
-
-    <p>Agrega la imagen ingresando la url.</p>
-
+        <h1> Galeria de Imágenes</h1>
+        <p>Agrega la imagen ingresando la URL y selecciona para eliminar.</p>
     </header>
 
-    <main class="container">
-
-        <section>
-            <label for="urlimagen">Url de la imagen:</label>
-            <input type="url" id="urlimagen"placeholder="https://ejemplo.com/imagen" >
-    
-        </section>
-    
-
-        <div class="botones">
-                
-                <button id="Agregarimg">Agregar imagen</button>
-
+<main class="container">
+        <section class="controls">
+            <div>
+                <label for="urlimagen">URL de la imagen:</label>
+                <input type="url" id="urlimagen" placeholder="https://ejemplo.com/imagen" required>
             </div>
-
-        <section>
-
-            <h2> Galeria</h2>
-            <div id="Galeria" class="Galeria"></div>
-
+            
+            <div class="action-buttons">
+                <button id="Agregarimg">Agregar Imagen</button>
+                
+                <button id="Eliminarimg" disabled>Eliminar Imagen Seleccionada</button>
+            </div>
         </section>
 
+        <section>
+            <h2>Tu Galeria</h2>
+            <div id="Galeria" class="galeria-grid">
+                </div>
+        </section>
+</main>
 
+    <script src="script.js"></script>
 
-
-
-    </main>
-
-
-  <script src="script.js"></script>
 </body>
-</html>
 
+ </html>
