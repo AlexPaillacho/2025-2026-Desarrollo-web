@@ -1,4 +1,4 @@
-// 1. Cambiamos 'products' a 'productos' para que coincida con el resto del script
+
 const productos = [
     {id: 1, nombre: "Producto A", precio: 20, descripcion: "Descripción A"},
     {id: 2, nombre: "Producto B", precio: 40, descripcion: "Descripción B"},
@@ -21,21 +21,27 @@ function renderizarproductos() {
 }
 
 function agregarProducto() {
-    // Definimos una descripción por defecto para que no de error
-    const descripcionLocal = "Nuevo producto añadido";
+    // 1. Pedimos los datos al usuario mediante ventanas emergentes
+    const nombreUsuario = prompt("Ingrese el nombre del producto:");
+    const precioUsuario = prompt("Ingrese el precio:");
+    const descUsuario = prompt("Ingrese la descripción:");
 
-    const nuevoProducto = {
-        id: productos.length + 1,
-        // Corregido String.fromCharCode
-        nombre: `Producto ${String.fromCharCode(65 + (productos.length % 26))}`,
-        precio: (productos.length + 1) * 100,
-        descripcion: descripcionLocal
-    };
+    // 2. Validación simple: si el usuario cancela o deja vacío, no agregamos nada
+    if (nombreUsuario && precioUsuario && descUsuario) {
+        const nuevoProducto = {
+            id: productos.length + 1,
+            nombre: nombreUsuario,
+            precio: parseFloat(precioUsuario), // Convertimos el texto a número
+            descripcion: descUsuario
+        };
 
-    productos.push(nuevoProducto);
-    renderizarproductos(); // Asegúrate que el nombre coincida (estaba con P mayúscula antes)
+        // 3. Empujamos al array y refrescamos la lista
+        productos.push(nuevoProducto);
+        renderizarproductos();
+    } else {
+        alert("Acción cancelada o faltan datos.");
+    }
 }
 
-// Eventos
 document.addEventListener("DOMContentLoaded", renderizarproductos);
 btnproducto.addEventListener("click", agregarProducto);
