@@ -1,8 +1,8 @@
 
 const productos = [
-    {id: 1, nombre: "Producto A", precio: 20, descripcion: "Descripción A"},
-    {id: 2, nombre: "Producto B", precio: 40, descripcion: "Descripción B"},
-    {id: 3, nombre: "Producto C", precio: 60, descripcion: "Descripción C"}
+    {id: 1, nombre: "Producto A", precio: 5, descripcion: "Descripción A"},
+    {id: 2, nombre: "Producto B", precio: 10, descripcion: "Descripción B"},
+    {id: 3, nombre: "Producto C", precio: 15, descripcion: "Descripción C"}
 ];
 
 const ul = document.getElementById("listaproductos");

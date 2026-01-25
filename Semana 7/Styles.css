@@ -1,0 +1,16 @@
+/* Usamos el ID para darle estilo al botón */
+#btnproducto {
+    background-color: #973605; 
+    color: white;              /* Color del texto */
+    padding: 10px 20px;       /* Tamaño del botón */
+    border: none;              /* Quita el borde feo por defecto */
+    border-radius: 8px;        /* Bordes redondeados */
+    font-size: 16px;           /* Tamaño de letra */
+    cursor: pointer;           /* Cambia el cursor a una manito */
+    transition: background 0.3s; /* Suaviza el cambio de color */
+}
+
+/* Efecto visual cuando pasas el mouse por encima */
+#btnproducto:hover {
+    background-color: #d64a0e; /* Un naranja más oscuro */
+}
