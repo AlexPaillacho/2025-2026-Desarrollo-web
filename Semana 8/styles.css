@@ -105,3 +105,9 @@ body {
     margin: 0;
     font-weight: 300;
 }
+
+.carousel-item img {
+   
+    image-rendering: -webkit-optimize-contrast; 
+    backface-visibility: hidden; 
+}
